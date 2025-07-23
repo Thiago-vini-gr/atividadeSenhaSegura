@@ -1,11 +1,11 @@
-/* Reseta alguns estilos padrão */
+/* Reset de estilos padrão e ajuste do box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Define a fonte e o espaçamento global */
+/* Estilo global da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -13,12 +13,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/* Container principal do formulário */
+/* Container do formulário */
 form {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -30,45 +30,46 @@ form {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
     font-size: 24px;
 }
 
-/* Estilo dos rótulos (labels) */
+/* Rótulos dos campos */
 label {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
     display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555555;
 }
 
-/* Estilo dos campos de entrada (input) */
+/* Campos de entrada */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
+    margin: 10px 0 20px 0;
+    border: 2px solid #dddddd;
     border-radius: 4px;
     font-size: 14px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de foco nos campos de entrada */
+/* Efeito de foco nos inputs */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     border-color: #3498db;
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
 }
 
-/* Estilo do botão */
+/* Botão de envio */
 button {
     width: 100%;
     padding: 12px;
     background-color: #3498db;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -76,29 +77,46 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Efeito de hover no botão */
+/* Hover e foco do botão */
 button:hover {
     background-color: #2980b9;
 }
 
-/* Efeito de foco no botão */
 button:focus {
-    outline: none;
+    outline: 2px solid #2980b9;
+    outline-offset: 2px;
 }
 
-/* Mensagens de sucesso ou erro */
+/* Mensagens (erro/sucesso) */
 .message {
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
 }
 
-/* Estilo de uma mensagem de erro */
 .message.error {
     color: #e74c3c;
 }
 
-/* Estilo de uma mensagem de sucesso */
 .message.success {
     color: #2ecc71;
+}
+#mensagemSenha {
+    margin-top: 10px;
+    font-size: 14px;
+}
+#regrasSenha {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#regrasSenha li {
+    margin-bottom: 6px;
+    color: #e74c3c; /* vermelho padrão para inválido */
+}
+
+#regrasSenha li.valido {
+    color: #2ecc71; /* verde para válido */
 }
