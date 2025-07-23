@@ -9,7 +9,7 @@ include 'conexao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linkando o CSS -->
+    <link rel="stylesheet" href="sytle.css"> <!-- Linkando o CSS -->
 </head>
 <body>
     <h2>Cadastro de Usuário</h2>
