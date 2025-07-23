@@ -10,6 +10,7 @@ include 'conexao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="sytle.css"> <!-- Linkando o CSS -->
+    <script src="js/valida.js"></script>
 </head>
 <body>
     <h2>Cadastro de Usuário</h2>
@@ -24,7 +25,7 @@ include 'conexao.php';
         <input type="email" id="email_usuario" name="email_usuario" required><br><br>
 
         <label for="senha_usuario">Senha:</label><br>
-        <input type="password" id="senha_usuario" name="senha_usuario" required><br><br>
+        <input type="password" id="senha_usuario" name="senha_usuario" onkeyup="validaSenha()" required><br><br>
 
         <button type="submit">Cadastrar</button>
     </form>
