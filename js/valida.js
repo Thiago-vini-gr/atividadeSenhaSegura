@@ -49,3 +49,5 @@ function validaSenha() {
         regraEspecial.classList.remove("valido");
     }
 }
+
+

@@ -120,3 +120,26 @@ button:focus {
 #regrasSenha li.valido {
     color: #2ecc71; /* verde para válido */
 }
+
+#regrasSenha li {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#regrasSenha li::before {
+    content: "❌";
+    position: absolute;
+    left: 0;
+}
+
+#regrasSenha li.valido::before {
+    content: "✅";
+    color: green;
+}
+
+#regrasSenha li.invalido::before {
+    content: "❌";
+    color: red;
+}

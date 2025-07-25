@@ -27,14 +27,14 @@ include 'conexao2.php';
 
         <label for="senha_usuario">Senha:</label>
         <input type="password" id="senha_usuario" name="senha_usuario" onkeyup="validaSenha()" required>
-
-        <h3>Segurança de senha</h3>
-        <ul id="regrasSenha">
-    <li id="regra-tamanho" class="invalido">Pelo menos 8 caracteres</li>
-    <li id="regra-maiuscula" class="invalido">Pelo menos uma letra maiúscula</li>
-    <li id="regra-minuscula" class="invalido">Pelo menos uma letra minúscula</li>
-    <li id="regra-numero" class="invalido">Pelo menos um número</li>
-    <li id="regra-especial" class="invalido">Pelo menos um caractere especial (@, $, !, %, *, ?, &)</li>
+ 
+        <h3>Segurança da Senha</h3>
+<ul id="regrasSenha">
+    <li id="regra-tamanho" class="invalido"> Pelo menos 8 caracteres</li>
+    <li id="regra-maiuscula" class="invalido"> Pelo menos uma letra maiúscula</li>
+    <li id="regra-minuscula" class="invalido"> Pelo menos uma letra minúscula</li>
+    <li id="regra-numero" class="invalido"> Pelo menos um número</li>
+    <li id="regra-especial" class="invalido"> Pelo menos um caractere especial (@, $, !, %, *, ?, &)</li>
 </ul>
 <br>
 
